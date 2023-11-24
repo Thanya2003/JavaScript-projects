@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kaisei+Decol:wght@500&family=Oswald:wght@200&family=Philosopher&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Philosopher', sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    }
+body{
+    text-align: center;
+}
+#winner{
+color: rgb(50, 43, 1);
+text-align: center;
+font-size: 50px;
+justify-content: center;
+display: inline-block;
+align-items: center;
+position: relative;
+text-transform: uppercase;
+animation: flip 2s infinite;
+animation-delay: calc(.2s * var(--i));
+}  
+
+
+#board{
+height: 540px;
+width: 590px;
+
+background-color:rgb(154, 154, 253);
+border: 10px solid rgb(159, 159, 248);
+
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+}
+
+.tile{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid rgb(159, 159, 248);
+
+
+}
+.red-piece{
+    background-color: rgb(225, 251, 149);
+
+}
+
+.yellow-piece{
+    background-color: rgb(146, 251, 184);
+}
